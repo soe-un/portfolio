@@ -11,6 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        titletext: "var(--title-text)",
+        pointcolor: "var(--point-color)",
       },
     },
   },
