@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ibmPlexSansKR.className} antialiased`}>
-        <div className="min-h-screen p-8 pb-20">{children}</div>
+        <div className="h-screen p-8 pb-20">{children}</div>
         <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
       </body>
     </html>

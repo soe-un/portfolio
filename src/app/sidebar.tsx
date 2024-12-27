@@ -1,5 +1,6 @@
 "use client";
 
+import clsx from "clsx";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
@@ -25,7 +26,13 @@ export default function Sidebar() {
   ] as { title: string; link: string }[];
 
   return (
-    <div className="absolute flex flex-col top-[2rem] right-[2rem] gap-4">
+    <div
+      className={clsx(
+        `absolute flex flex-col top-[2rem] right-[2rem]`,
+        `gap-2 text-lg`,
+        `sm:gap-4 sm:text-xl`
+      )}
+    >
       {tabs.map((t, idx) => {
         return (
           <Link href={t.link} key={t.link}>

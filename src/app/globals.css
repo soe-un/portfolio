@@ -23,19 +23,20 @@ body {
   background: var(--background);
   font-family: "IBM Plex Sans KR", Arial, Helvetica, sans-serif;
 
+  strong {
+    color: var(--point-color);
+  }
+
   h1 {
     color: var(--title-text);
-    font-size: 4vw;
-    strong {
-      color: var(--point-color);
-      font-size: 4.5vw;
-    }
   }
 
   button {
-    font-size: 2vw;
-    strong {
-      color: var(--point-color);
+    padding: 6px 12px;
+    border-radius: 4px;
+    &:hover {
+      background-color: var(--foreground);
+      color: var(--background);
     }
   }
 }
