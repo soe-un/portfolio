@@ -1,12 +1,11 @@
 import { FaArrowRight } from "react-icons/fa6";
-import Sidebar from "./sidebar";
 import clsx from "clsx";
 
 export default function Home() {
   return (
-    <main className="h-[calc(100vh-7rem)] flex gap-8 row-start-2 items-start">
+    <main className="h-[calc(100vh-7rem)] flex gap-8 row-start-2 items-start sm:ml-10">
       <div className="flex gap-4 items-center flex-row h-full">
-        <h1 className={clsx(`text-lg`, `sm:text-6xl`)}>
+        <h1 className={clsx(`text-5xl`, `sm:text-6xl`)}>
           안녕하세요.
           <br />
           <div className="flex items-center mt-6">
@@ -20,7 +19,6 @@ export default function Home() {
           <strong>박소은</strong>입니다.
         </h1>
       </div>
-      <Sidebar />
     </main>
   );
 }

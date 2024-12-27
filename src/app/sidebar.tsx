@@ -2,7 +2,7 @@
 
 import clsx from "clsx";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export default function Sidebar() {
   const pathName = usePathname();
@@ -29,8 +29,8 @@ export default function Sidebar() {
     <div
       className={clsx(
         `absolute flex flex-col top-[2rem] right-[2rem]`,
-        `gap-2 text-lg`,
-        `sm:gap-4 sm:text-xl`
+        `gap-2 text-xl`,
+        `sm:gap-4`
       )}
     >
       {tabs.map((t, idx) => {
