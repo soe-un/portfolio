@@ -34,17 +34,12 @@ export default function Sidebar() {
   const tabs = ["Home", "About Me", "Skills", "Projects"];
 
   return (
-    <div
-      className={clsx(
-        `fixed sm:top-0 right-0 bottom-0`,
-        `h-fit w-fit sm:w-full bg-background`
-      )}
-    >
+    <div className={clsx(`fixed right-0 top-0`, `h-fit w-full`)}>
       <div
         className={clsx(
-          `p-[2rem] flex justify-end sm:flex-row flex-col `,
-          `gap-2 text-xl`,
-          `sm:gap-4`
+          `pr-2 pb-2 flex justify-end flex-row`,
+          `gap-2 text-sm`,
+          `sm:flex-row sm:p-[2rem] sm:gap-4 sm:text-xl`
         )}
       >
         {tabs.map((t, idx) => {
@@ -52,7 +47,8 @@ export default function Sidebar() {
             <button
               className={clsx(
                 `${activeTab === idx && "text-background bg-foreground"}`,
-                `text-left`
+                `text-left block`,
+                `sm:flex`
               )}
               key={t}
               onClick={() => {
@@ -63,7 +59,8 @@ export default function Sidebar() {
                 });
               }}
             >
-              <strong>{`${String(idx).padStart(2, "0")}.`}</strong> {t}
+              <strong>{`${String(idx).padStart(2, "0")}.`}</strong>
+              <div className="ml-2">{t}</div>
             </button>
           );
         })}

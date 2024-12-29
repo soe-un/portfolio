@@ -6,8 +6,8 @@ import { FaArrowRight } from "react-icons/fa6";
 export default function Home() {
   return (
     <main>
-      <section>
-        <h1 className={clsx(`text-5xl`, `sm:text-6xl`)}>
+      <section className="flex flex-row items-center">
+        <h1 className={clsx(`text-4xl sm:text-6xl`)}>
           안녕하세요.
           <br />
           <div className="flex items-center mt-6">
