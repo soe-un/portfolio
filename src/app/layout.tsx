@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${ibmPlexSansKR.className} antialiased`}>
         <PageTransition>
-          <div className="h-screen p-8 pb-20">{children}</div>
+          <div className="h-full w-full">{children}</div>
         </PageTransition>
         <Sidebar />
         <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>

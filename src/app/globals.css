@@ -23,6 +23,10 @@ body {
   background: var(--background);
   font-family: "IBM Plex Sans KR", Arial, Helvetica, sans-serif;
 
+  main {
+    height: calc(100vh - 104px);
+  }
+
   strong {
     color: var(--point-color);
   }
