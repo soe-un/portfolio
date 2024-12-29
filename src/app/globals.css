@@ -24,7 +24,26 @@ body {
   font-family: "IBM Plex Sans KR", Arial, Helvetica, sans-serif;
 
   main {
-    height: calc(100vh - 104px);
+    height: calc(100vh);
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  @media (width >= 640px) {
+    main {
+      height: calc(100vh - 104px);
+      margin-left: 2.5rem;
+      margin-top: 104px;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
   }
 
   strong {
